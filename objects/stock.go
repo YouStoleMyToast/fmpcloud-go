@@ -76,8 +76,8 @@ type StockSector string
 // StockCandlePeriod ...
 type StockCandlePeriod string
 
-// StockSerieType ...
-type StockSerieType string
+// StockSeriesType ...
+type StockSeriesType string
 
 // StockQuote ...
 type StockQuote struct {
@@ -105,8 +105,8 @@ type StockQuote struct {
 	Timestamp            int64    `json:"timestamp"`
 }
 
-// StockQuoteShot ...
-type StockQuoteShot struct {
+// StockQuoteShort ...
+type StockQuoteShort struct {
 	Symbol string  `json:"symbol"`
 	Price  float64 `json:"price"`
 	Volume int64   `json:"volume"`
@@ -378,8 +378,8 @@ type SurvivorshipBiasFree struct {
 	From   string  `json:"from"`
 }
 
-// StockSerieType return string
-func (s StockSerieType) String() string {
+// StockSeriesType return string
+func (s StockSeriesType) String() string {
 	return string(s)
 }
 
